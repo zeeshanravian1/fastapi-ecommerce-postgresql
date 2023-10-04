@@ -26,7 +26,6 @@ class UserResponseMessage:
     """
 
     USER_NOT_FOUND: str = "User not found"
-    USER_DELETED: str = "User deleted successfully"
 
     PASSWORD_CHANGED: str = "Password changed successfully"
     INCORRECT_PASSWORD: str = "Incorrect password"

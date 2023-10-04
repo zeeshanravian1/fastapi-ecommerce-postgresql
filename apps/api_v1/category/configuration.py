@@ -25,8 +25,8 @@ class CategoryConfiguration:
 
     """
 
-    CATEGORY: str = "summer"
-    CATEGORY_DESCRIPTION: str = "Summer Season Category Description"
+    CATEGORY: str = "Electronics"
+    CATEGORY_DESCRIPTION: str = "Electronics Category Description"
     CATEGORY_COLUMN_NAME: str = "category_name"
 
 

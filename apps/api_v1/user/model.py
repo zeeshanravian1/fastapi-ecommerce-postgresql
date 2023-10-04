@@ -53,6 +53,7 @@ class UserTable(BaseTable):
         Enum(UserTokenStatus, schema=core_configuration.DB_SCHEMA),
         default=UserTokenStatus.LOGOUT,
     )
+
     role_id: Mapped[int] = mapped_column(
         ForeignKey(RoleTable.id, ondelete="CASCADE")
     )

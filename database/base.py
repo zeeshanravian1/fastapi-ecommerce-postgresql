@@ -8,6 +8,7 @@
 
 # Importing Python Packages
 from datetime import datetime
+from sqlalchemy import DateTime
 from sqlalchemy.sql.functions import now
 from sqlalchemy.orm import Mapped, declared_attr, mapped_column
 
@@ -32,8 +33,12 @@ class BaseTable(Base):
     __abstract__ = True
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    created_at: Mapped[datetime] = mapped_column(default=now())
-    updated_at: Mapped[datetime] = mapped_column(nullable=True, onupdate=now())
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=now()
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=True, onupdate=now()
+    )
 
     @declared_attr
     def __tablename__(self) -> str:

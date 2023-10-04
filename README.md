@@ -136,8 +136,8 @@ alembic upgrade heads
 
 ## Usage
 
-- Pre Defined Roles:
-Run roles_insertion.py from core/database_insertions to insert pre-defined roles
+- Pre Defined Roles and Super Admin User:
+We have already added some roles and also a super admin user in database at the time of migrations. So you can use these to login.
 
 - Run FastAPI Server:
 To run the FastAPI server run this command

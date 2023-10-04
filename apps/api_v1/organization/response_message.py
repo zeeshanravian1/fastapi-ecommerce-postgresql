@@ -26,7 +26,6 @@ class OrganizationResponseMessage:
     """
 
     ORGANIZATION_NOT_FOUND: str = "Organization not found"
-    ORGANIZATION_DELETED: str = "Organization deleted successfully"
 
 
 organization_response_message = OrganizationResponseMessage()

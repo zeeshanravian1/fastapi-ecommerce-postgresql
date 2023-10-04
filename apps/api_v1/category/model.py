@@ -8,7 +8,7 @@
 
 # Importing Python Packages
 from sqlalchemy import String
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 # Importing FastAPI Packages
 
@@ -31,4 +31,9 @@ class CategoryTable(BaseTable):
     category_name: Mapped[str] = mapped_column(String(2_55), unique=True)
     category_description: Mapped[str] = mapped_column(
         String(2_55), nullable=True
+    )
+
+    # Relationship
+    category_product: Mapped[list["ProductTable"]] = relationship(
+        back_populates="product_category"
     )

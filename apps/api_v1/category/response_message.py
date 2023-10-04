@@ -26,7 +26,6 @@ class CategoryResponseMessage:
     """
 
     CATEGORY_NOT_FOUND: str = "Category not found"
-    CATEGORY_DELETED: str = "Category deleted successfully"
 
 
 category_response_message = CategoryResponseMessage()

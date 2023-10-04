@@ -26,7 +26,6 @@ class RoleResponseMessage:
     """
 
     ROLE_NOT_FOUND: str = "Role not found"
-    ROLE_DELETED: str = "Role deleted successfully"
 
 
 role_response_message = RoleResponseMessage()
